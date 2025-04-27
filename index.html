@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achadinhos da Shopee</title>
+  <style>
+    body {
+      background-color: #fef6e4;
+      font-family: 'Courier New', monospace;
+      color: #001858;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #f582ae;
+      color: #fef6e4;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #8bd3dd;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #001858;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .produto {
+      background-color: #f582ae;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+      color: #fef6e4;
+    }
+
+    .produto img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    .produto h3 {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✨ Achadinhos da Shopee ✨</h1>
+  </header>
+
+  <nav>
+    <a href="#eletronicos">Eletrônicos</a>
+    <a href="#decoracao">Decoração</a>
+    <a href="#beleza">Beleza</a>
+  </nav>
+
+  <div class="produtos" id="eletronicos">
+    <div class="produto">
+      <img src="URL_DA_IMAGEM" alt="Produto Eletrônico">
+      <h3>Nome do Produto</h3>
+    </div>
+    <!-- Repete para mais produtos -->
+  </div>
+
+  <div class="produtos" id="decoracao">
+    <div class="produto">
+      <img src="URL_DA_IMAGEM" alt="Produto Decoração">
+      <h3>Nome do Produto</h3>
+    </div>
+  </div>
+
+  <div class="produtos" id="beleza">
+    <div class="produto">
+      <img src="URL_DA_IMAGEM" alt="Produto Beleza">
+      <h3>Nome do Produto</h3>
+    </div>
+  </div>
+
+</body>
+</html>
