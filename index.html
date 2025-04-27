@@ -3,95 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Achadinhos da Shopee</title>
+  <title>Achadinhos Valiosos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
-      background-color: #fef6e4;
-      font-family: 'Courier New', monospace;
-      color: #001858;
+      background: linear-gradient(135deg, #4b0082, #9370db);
+      font-family: 'Press Start 2P', cursive;
+      color: #ffffff;
       margin: 0;
       padding: 0;
     }
 
     header {
       text-align: center;
-      padding: 20px;
-      background-color: #f582ae;
-      color: #fef6e4;
+      padding: 30px;
+      background-color: #dda0dd;
+      color: #4b0082;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
 
     nav {
       display: flex;
       justify-content: center;
-      gap: 20px;
-      background-color: #8bd3dd;
-      padding: 10px 0;
+      gap: 30px;
+      background-color: #9370db;
+      padding: 12px 0;
+      flex-wrap: wrap;
     }
 
     nav a {
-      color: #001858;
+      color: #ffffff;
       text-decoration: none;
       font-weight: bold;
     }
 
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .produtos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      padding: 20px;
+      padding: 30px;
     }
 
     .produto {
-      background-color: #f582ae;
-      border-radius: 10px;
+      background-color: #ffffff;
+      border-radius: 15px;
       overflow: hidden;
       text-align: center;
-      padding: 10px;
-      color: #fef6e4;
+      padding: 20px;
+      color: #4b0082;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .produto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
     }
 
     .produto img {
       max-width: 100%;
-      border-radius: 5px;
+      border-radius: 10px;
     }
 
     .produto h3 {
       margin-top: 10px;
-      font-size: 1.1em;
+      font-size: 1em;
+    }
+
+    .estrelas {
+      color: #f4c430;
+      margin: 8px 0;
+    }
+
+    .botao {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 14px;
+      background-color: #9370db;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .botao:hover {
+      background-color: #4b0082;
+    }
+
+    .icone-carrinho {
+      font-size: 24px;
+      color: #4b0082;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>✨ Achadinhos da Shopee ✨</h1>
+    <h1>✨ Achadinhos Valiosos ✨</h1>
   </header>
 
   <nav>
     <a href="#eletronicos">Eletrônicos</a>
     <a href="#decoracao">Decoração</a>
     <a href="#beleza">Beleza</a>
+    <a href="contato.html">Sobre/Contato</a>
   </nav>
 
   <div class="produtos" id="eletronicos">
     <div class="produto">
+      <div class="icone-carrinho"><i class="fas fa-shopping-cart"></i></div>
       <img src="URL_DA_IMAGEM" alt="Produto Eletrônico">
-      <h3>Nome do Produto</h3>
+      <h3>Produto Incrível</h3>
+      <div class="estrelas">⭐⭐⭐⭐⭐</div>
+      <a class="botao" href="URL_AFILIADO" target="_blank">Ver na Shopee</a>
     </div>
-    <!-- Repete para mais produtos -->
   </div>
 
   <div class="produtos" id="decoracao">
     <div class="produto">
+      <div class="icone-carrinho"><i class="fas fa-shopping-cart"></i></div>
       <img src="URL_DA_IMAGEM" alt="Produto Decoração">
-      <h3>Nome do Produto</h3>
+      <h3>Decoração Charmosa</h3>
+      <div class="estrelas">⭐⭐⭐⭐</div>
+      <a class="botao" href="URL_AFILIADO" target="_blank">Ver na Shopee</a>
     </div>
   </div>
 
   <div class="produtos" id="beleza">
     <div class="produto">
+      <div class="icone-carrinho"><i class="fas fa-shopping-cart"></i></div>
       <img src="URL_DA_IMAGEM" alt="Produto Beleza">
-      <h3>Nome do Produto</h3>
+      <h3>Beleza Retro</h3>
+      <div class="estrelas">⭐⭐⭐⭐⭐</div>
+      <a class="botao" href="URL_AFILIADO" target="_blank">Ver na Shopee</a>
     </div>
   </div>
 
