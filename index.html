@@ -1,100 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compr Valiosa</title>
+  <title>Achadinhos Valiosos</title>
   <style>
     body {
+      background-color: #4b0082; /* roxo escuro */
+      font-family: 'Courier New', monospace;
+      color: #ffffff;
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #FFFFFF;
-      color: #000000;
+      padding: 0;
     }
 
     header {
-      background-color: #8A2BE2;
-      color: #FFFFFF;
       text-align: center;
-      padding: 1rem 0;
-      position: relative;
+      padding: 20px;
+      background-color: #dda0dd; /* lilás claro */
+      color: #4b0082;
     }
 
-    header::before {
-      content: '⭐⭐⭐⭐⭐';
-      display: block;
-      font-size: 1.2rem;
-      margin-bottom: 0.3rem;
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #9370db; /* lilás médio */
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
     }
 
     .produto {
-      background-color: #EAD8FF;
-      margin: 1rem;
-      padding: 1rem;
-      border-radius: 10px;
+      background-color: #ffffff; /* branco */
+      border-radius: 12px;
+      overflow: hidden;
       text-align: center;
+      padding: 10px;
+      color: #4b0082;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
     .produto img {
-      width: 150px;
-      height: 150px;
+      max-width: 100%;
       border-radius: 8px;
     }
 
-    .link-produto {
-      display: block;
-      background-color: #8A2BE2;
-      color: #FFFFFF;
-      text-decoration: none;
-      padding: 0.6rem;
-      margin-top: 0.8rem;
-      border-radius: 20px;
-      position: relative;
+    .produto h3 {
+      margin-top: 10px;
+      font-size: 1.1em;
     }
-
-    .link-produto::before {
-      content: '🛒 ';
-    }
-
-    footer {
-      background-color: #CBA6F7;
-      color: #000000;
-      text-align: center;
-      padding: 1rem 0;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-    }
-
-    .whatsapp-contato {
-      display: none;
-    }
-
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Compr Valiosa</h1>
+    <h1>✨ Achadinhos Valiosos ✨</h1>
   </header>
 
-  <div class="produto">
-    <img src="https://via.placeholder.com/150" alt="Produto 1">
-    <h2>Achadinho Incrível 1</h2>
-    <a href="#" class="link-produto">Ver na Shopee</a>
-  </div>
+  <nav>
+    <a href="#eletronicos">Eletrônicos</a>
+    <a href="#decoracao">Decoração</a>
+    <a href="#beleza">Beleza</a>
+  </nav>
 
-  <div class="produto">
-    <img src="https://via.placeholder.com/150" alt="Produto 2">
-    <h2>Achadinho Incrível 2</h2>
-    <a href="#" class="link-produto">Ver na Shopee</a>
-  </div>
-
-  <footer>
-    © 2025 Compr Valiosa 💜
-    <div class="whatsapp-contato">
-      <a href="https://wa.me/seunumerodowhatsapp">Fale conosco via WhatsApp</a>
+  <div class="produtos" id="eletronicos">
+    <div class="produto">
+      <img src="URL_DA_IMAGEM" alt="Produto Eletrônico">
+      <h3>Nome do Produto</h3>
     </div>
-  </footer>
+  </div>
+
+  <div class="produtos" id="decoracao">
+    <div class="produto">
+      <img src="URL_DA_IMAGEM" alt="Produto Decoração">
+      <h3>Nome do Produto</h3>
+    </div>
+  </div>
+
+  <div class="produtos" id="beleza">
+    <div class="produto">
+      <img src="URL_DA_IMAGEM" alt="Produto Beleza">
+      <h3>Nome do Produto</h3>
+    </div>
+  </div>
 
 </body>
 </html>
