@@ -1,204 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Achadinhos Valiosos</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Compr Valiosa</title>
   <style>
     body {
-      background: linear-gradient(135deg, #4b0082, #9370db);
-      font-family: 'Press Start 2P', cursive;
-      color: #ffffff;
       margin: 0;
-      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #FFFFFF;
+      color: #000000;
     }
 
     header {
+      background-color: #8A2BE2;
+      color: #FFFFFF;
       text-align: center;
-      padding: 30px;
-      background-color: #dda0dd;
-      color: #4b0082;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      padding: 1rem 0;
+      position: relative;
     }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      background-color: #9370db;
-      padding: 12px 0;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 30px;
+    header::before {
+      content: '⭐⭐⭐⭐⭐';
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
     }
 
     .produto {
-      background-color: #ffffff;
-      border-radius: 15px;
-      overflow: hidden;
+      background-color: #EAD8FF;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 10px;
       text-align: center;
-      padding: 20px;
-      color: #4b0082;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .produto:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
     }
 
     .produto img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-
-    .produto h3 {
-      margin-top: 10px;
-      font-size: 1em;
-    }
-
-    .estrelas {
-      color: #f4c430;
-      margin: 8px 0;
-    }
-
-    .botao {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 8px 14px;
-      background-color: #9370db;
-      color: #ffffff;
-      text-decoration: none;
+      width: 150px;
+      height: 150px;
       border-radius: 8px;
-      transition: background-color 0.3s;
     }
 
-    .botao:hover {
-      background-color: #4b0082;
+    .link-produto {
+      display: block;
+      background-color: #8A2BE2;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 0.6rem;
+      margin-top: 0.8rem;
+      border-radius: 20px;
+      position: relative;
     }
 
-    .icone-carrinho {
-      font-size: 24px;
-      color: #4b0082;
-      margin-bottom: 10px;
+    .link-produto::before {
+      content: '🛒 ';
     }
+
+    footer {
+      background-color: #CBA6F7;
+      color: #000000;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    .whatsapp-contato {
+      display: none;
+    }
+
   </style>
 </head>
 <body>
 
   <header>
-    <h1>✨ Achadinhos Valiosos ✨</h1>
+    <h1>Compr Valiosa</h1>
   </header>
 
-  <nav>
-    <a href="#eletronicos">Eletrônicos</a>
-    <a href="#decoracao">Decoração</a>
-    <a href="#beleza">Beleza</a>
-    <a href="contato.html">Sobre/Contato</a>
-  </nav>
-
-  <div class="produtos" id="eletronicos">
-    <div class="produto">
-      <div class="icone-carrinho"><i class="fas fa-shopping-cart"></i></div>
-      <img src="URL_DA_IMAGEM" alt="Produto Eletrônico">
-      <h3>Produto Incrível</h3>
-      <div class="estrelas">⭐⭐⭐⭐⭐</div>
-      <a class="botao" href="URL_AFILIADO" target="_blank">Ver na Shopee</a>
-    </div>
+  <div class="produto">
+    <img src="https://via.placeholder.com/150" alt="Produto 1">
+    <h2>Achadinho Incrível 1</h2>
+    <a href="#" class="link-produto">Ver na Shopee</a>
   </div>
 
-  <div class="produtos" id="decoracao">
-    <div class="produto">
-      <div class="icone-carrinho"><i class="fas fa-shopping-cart"></i></div>
-      <img src="URL_DA_IMAGEM" alt="Produto Decoração">
-      <h3>Decoração Charmosa</h3>
-      <div class="estrelas">⭐⭐⭐⭐</div>
-      <a class="botao" href="URL_AFILIADO" target="_blank">Ver na Shopee</a>
-    </div>
+  <div class="produto">
+    <img src="https://via.placeholder.com/150" alt="Produto 2">
+    <h2>Achadinho Incrível 2</h2>
+    <a href="#" class="link-produto">Ver na Shopee</a>
   </div>
 
-  <div class="produtos" id="beleza">
-    <div class="produto">
-      <div class="icone-carrinho"><i class="fas fa-shopping-cart"></i></div>
-      <img src="URL_DA_IMAGEM" alt="Produto Beleza">
-      <h3>Beleza Retro</h3>
-      <div class="estrelas">⭐⭐⭐⭐⭐</div>
-      <a class="botao" href="URL_AFILIADO" target="_blank">Ver na Shopee</a>
+  <footer>
+    © 2025 Compr Valiosa 💜
+    <div class="whatsapp-contato">
+      <a href="https://wa.me/seunumerodowhatsapp">Fale conosco via WhatsApp</a>
     </div>
-  </div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre / Contato</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: linear-gradient(135deg, #4b0082, #9370db);
-      font-family: 'Press Start 2P', cursive;
-      color: #ffffff;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      color: #dda0dd;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-
-    a.botao {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #dda0dd;
-      color: #4b0082;
-      text-decoration: none;
-      border-radius: 10px;
-      margin-top: 20px;
-      transition: background-color 0.3s;
-    }
-
-    a.botao:hover {
-      background-color: #ffffff;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>Sobre & Contato</h1>
-
-  <p>Bem-vindo ao <strong>Achadinhos Valiosos</strong>! Aqui você encontra produtos incríveis da Shopee nas categorias <strong>Eletrônicos</strong>, <strong>Decoração</strong> e <strong>Beleza</strong>, tudo no estilo retrô 💜✨</p>
-
-  <p>Quer falar comigo direto? Chama no WhatsApp 👇</p>
-
-  <a class="botao" href="https://wa.me/SEUNUMEROAQUI" target="_blank">Falar no WhatsApp</a>
+  </footer>
 
 </body>
 </html>
